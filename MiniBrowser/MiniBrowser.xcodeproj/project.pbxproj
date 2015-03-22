@@ -12,6 +12,8 @@
 		8CAFBB711ABF64C500C88B53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB701ABF64C500C88B53 /* Images.xcassets */; };
 		8CAFBB741ABF64C500C88B53 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB721ABF64C500C88B53 /* MainMenu.xib */; };
 		8CAFBB801ABF64C500C88B53 /* MiniBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB7F1ABF64C500C88B53 /* MiniBrowserTests.m */; };
+		8CAFBB911ABF672700C88B53 /* BrowserWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */; };
+		8CAFBB921ABF672700C88B53 /* BrowserWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 		8CAFBB791ABF64C500C88B53 /* MiniBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAFBB7E1ABF64C500C88B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAFBB7F1ABF64C500C88B53 /* MiniBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniBrowserTests.m; sourceTree = "<group>"; };
+		8CAFBB8E1ABF672700C88B53 /* BrowserWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserWindowController.h; sourceTree = "<group>"; };
+		8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserWindowController.m; sourceTree = "<group>"; };
+		8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				8CAFBB6B1ABF64C500C88B53 /* AppDelegate.h */,
+				8CAFBB8E1ABF672700C88B53 /* BrowserWindowController.h */,
+				8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */,
+				8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */,
 				8CAFBB6C1ABF64C500C88B53 /* AppDelegate.m */,
 				8CAFBB701ABF64C500C88B53 /* Images.xcassets */,
 				8CAFBB721ABF64C500C88B53 /* MainMenu.xib */,
@@ -191,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAFBB921ABF672700C88B53 /* BrowserWindowController.xib in Resources */,
 				8CAFBB711ABF64C500C88B53 /* Images.xcassets in Resources */,
 				8CAFBB741ABF64C500C88B53 /* MainMenu.xib in Resources */,
 			);
@@ -211,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAFBB6F1ABF64C500C88B53 /* main.m in Sources */,
+				8CAFBB911ABF672700C88B53 /* BrowserWindowController.m in Sources */,
 				8CAFBB6D1ABF64C500C88B53 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

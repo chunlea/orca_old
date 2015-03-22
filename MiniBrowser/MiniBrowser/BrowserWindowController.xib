@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BrowserWindowController">
+            <connections>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="651" height="600"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="651" height="600"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="26F-Et-fYV">
+                        <rect key="frame" x="0.0" y="0.0" width="651" height="570"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="380" id="0gz-u8-tUe"/>
+                        </constraints>
+                    </customView>
+                    <textField verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-9J-LKu">
+                        <rect key="frame" x="10" y="574" width="541" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="500" id="agO-Zn-zjE"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="Please use the URL or file URI, like http://www.baidu.com" drawsBackground="YES" id="8gO-VB-xGd">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gie-v4-7nt">
+                        <rect key="frame" x="555" y="567" width="92" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ypd-pZ-b5O"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Go" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fZm-yo-tyl">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gie-v4-7nt" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="5" id="3Z3-Fx-VEs"/>
+                    <constraint firstItem="MrE-9J-LKu" firstAttribute="centerY" secondItem="gie-v4-7nt" secondAttribute="centerY" id="FIp-1j-7Er"/>
+                    <constraint firstItem="26F-Et-fYV" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="Hzt-v7-VDz"/>
+                    <constraint firstAttribute="bottom" secondItem="26F-Et-fYV" secondAttribute="bottom" id="SIH-BM-gnS"/>
+                    <constraint firstItem="gie-v4-7nt" firstAttribute="leading" secondItem="MrE-9J-LKu" secondAttribute="trailing" constant="10" id="UUA-Pp-LiH"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="26F-Et-fYV" secondAttribute="bottom" id="Wn7-1M-PgR"/>
+                    <constraint firstAttribute="trailing" secondItem="26F-Et-fYV" secondAttribute="trailing" id="YEh-JQ-qGc"/>
+                    <constraint firstAttribute="trailing" secondItem="gie-v4-7nt" secondAttribute="trailing" constant="10" id="aYv-R7-Go8"/>
+                    <constraint firstItem="MrE-9J-LKu" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="10" id="izJ-HH-BBo"/>
+                    <constraint firstItem="26F-Et-fYV" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="30" id="j1T-P3-8Yf"/>
+                    <constraint firstAttribute="trailing" secondItem="26F-Et-fYV" secondAttribute="trailing" id="qw1-KB-Hib"/>
+                    <constraint firstItem="MrE-9J-LKu" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="5" id="vAQ-Dc-JPc"/>
+                    <constraint firstItem="26F-Et-fYV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="se5-gp-TjO" secondAttribute="leading" id="vIr-Bs-Ugi"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="360.5" y="458"/>
+        </window>
+    </objects>
+</document>
