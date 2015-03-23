@@ -10,6 +10,8 @@
 		8CAFBBA31ABF719000C88B53 /* OrcaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAFBBA21ABF719000C88B53 /* OrcaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CAFBBA91ABF719000C88B53 /* OrcaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAFBB9D1ABF719000C88B53 /* OrcaKit.framework */; };
 		8CAFBBB01ABF719000C88B53 /* OrcaKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBBAF1ABF719000C88B53 /* OrcaKitTests.m */; };
+		8CAFBBC01ABF737200C88B53 /* OrcaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAFBBBE1ABF737200C88B53 /* OrcaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CAFBBC11ABF737200C88B53 /* OrcaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBBBF1ABF737200C88B53 /* OrcaView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		8CAFBBA81ABF719000C88B53 /* OrcaKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrcaKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAFBBAE1ABF719000C88B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAFBBAF1ABF719000C88B53 /* OrcaKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrcaKitTests.m; sourceTree = "<group>"; };
+		8CAFBBBE1ABF737200C88B53 /* OrcaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrcaView.h; path = OrcaView/OrcaView.h; sourceTree = "<group>"; };
+		8CAFBBBF1ABF737200C88B53 /* OrcaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OrcaView.m; path = OrcaView/OrcaView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			children = (
 				8CAFBBA21ABF719000C88B53 /* OrcaKit.h */,
 				8CAFBBA01ABF719000C88B53 /* Supporting Files */,
+				8CAFBBC21ABF737900C88B53 /* OrcaView */,
 			);
 			path = OrcaKit;
 			sourceTree = "<group>";
@@ -102,6 +107,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8CAFBBC21ABF737900C88B53 /* OrcaView */ = {
+			isa = PBXGroup;
+			children = (
+				8CAFBBBE1ABF737200C88B53 /* OrcaView.h */,
+				8CAFBBBF1ABF737200C88B53 /* OrcaView.m */,
+			);
+			name = OrcaView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -110,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAFBBA31ABF719000C88B53 /* OrcaKit.h in Headers */,
+				8CAFBBC01ABF737200C88B53 /* OrcaView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAFBBC11ABF737200C88B53 /* OrcaView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +412,7 @@
 				8CAFBBB51ABF719000C88B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CAFBBB61ABF719000C88B53 /* Build configuration list for PBXNativeTarget "OrcaKitTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +421,7 @@
 				8CAFBBB81ABF719000C88B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

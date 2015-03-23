@@ -32,18 +32,31 @@
 
 - (void)awakeFromNib
 {
-    /*_orcaView = [[OrcaView alloc] initWithFrame:[containerView bounds] frameName:nil];
+    _orcaView = [[OrcaView alloc] initWithFrame:[containerView bounds]];
     [_orcaView setAutoresizingMask:(NSViewWidthSizable | NSViewHeightSizable)];
     _orcaView.delegate = self;
-    //    [_orcaView setFrameLoadDelegate:self];
-    //    [_orcaView setUIDelegate:self];
-    //    [_orcaView setResourceLoadDelegate:self];
-    //    [_orcaView setPolicyDelegate:self];
     
-    [containerView addSubview:_orcaView];*/
+    [containerView addSubview:_orcaView];
     
     NSLog(@"Loaded!");
 }
 
+- (void)setWindowTitle:(OrcaView *)orcaView {
+    self.window.title = orcaView.getDocumentTitle;
+}
 
+- (void)loadURLString:(NSString *)urlString
+{
+    [urlText setStringValue:urlString];
+    [self fetch:nil];
+}
+
+- (IBAction)fetch:(id)sender
+{
+    [_orcaView loadRequest:urlText.stringValue];
+}
+
+- (void)applicationTerminating
+{
+}
 @end

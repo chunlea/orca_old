@@ -7,7 +7,18 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <OrcaKit/OrcaKit.h>
 
-@interface BrowserWindowController : NSWindowController
+@interface BrowserWindowController : NSWindowController <OrcaViewDelegate> {
+    IBOutlet NSButton *goButton;
+    IBOutlet NSTextField *urlText;
+    IBOutlet NSView *containerView;
+    
+    OrcaView *_orcaView;
 
+}
+
+- (void)loadURLString:(NSString *)urlString;
+- (void)applicationTerminating;
+- (IBAction)fetch:(id)sender;
 @end

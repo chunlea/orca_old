@@ -14,7 +14,7 @@
 		8CAFBB801ABF64C500C88B53 /* MiniBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB7F1ABF64C500C88B53 /* MiniBrowserTests.m */; };
 		8CAFBB911ABF672700C88B53 /* BrowserWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */; };
 		8CAFBB921ABF672700C88B53 /* BrowserWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */; };
-		8CAFBBBD1ABF71EF00C88B53 /* OrcaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAFBBB91ABF71DE00C88B53 /* OrcaKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8CAFBBC91ABF7A6000C88B53 /* OrcaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAFBBC81ABF7A6000C88B53 /* OrcaKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 		8CAFBB8E1ABF672700C88B53 /* BrowserWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserWindowController.h; sourceTree = "<group>"; };
 		8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserWindowController.m; sourceTree = "<group>"; };
 		8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserWindowController.xib; sourceTree = "<group>"; };
-		8CAFBBB91ABF71DE00C88B53 /* OrcaKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = OrcaKit.framework; path = "/Users/chunlea/Library/Developer/Xcode/DerivedData/Orca-arjunutbtnigohcnxqtbugwhhxqw/Build/Products/Debug/OrcaKit.framework"; sourceTree = "<absolute>"; };
+		8CAFBBC81ABF7A6000C88B53 /* OrcaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OrcaKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Orca-arjunutbtnigohcnxqtbugwhhxqw/Build/Products/Debug/OrcaKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CAFBBBD1ABF71EF00C88B53 /* OrcaKit.framework in Frameworks */,
+				8CAFBBC91ABF7A6000C88B53 /* OrcaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +66,7 @@
 		8CAFBB5D1ABF64C400C88B53 = {
 			isa = PBXGroup;
 			children = (
-				8CAFBBB91ABF71DE00C88B53 /* OrcaKit.framework */,
+				8CAFBBC81ABF7A6000C88B53 /* OrcaKit.framework */,
 				8CAFBB681ABF64C500C88B53 /* MiniBrowser */,
 				8CAFBB7C1ABF64C500C88B53 /* MiniBrowserTests */,
 				8CAFBB671ABF64C500C88B53 /* Products */,
@@ -343,6 +343,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Orca-arjunutbtnigohcnxqtbugwhhxqw/Build/Products/Debug",
+					/Users/chunlea/projects/Orca/OrcaKit/build/Debug,
 				);
 				INFOPLIST_FILE = MiniBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -358,6 +359,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Orca-arjunutbtnigohcnxqtbugwhhxqw/Build/Products/Debug",
+					/Users/chunlea/projects/Orca/OrcaKit/build/Debug,
 				);
 				INFOPLIST_FILE = MiniBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -420,6 +422,7 @@
 				8CAFBB851ABF64C500C88B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CAFBB861ABF64C500C88B53 /* Build configuration list for PBXNativeTarget "MiniBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +431,7 @@
 				8CAFBB881ABF64C500C88B53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

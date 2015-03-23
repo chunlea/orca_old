@@ -6,6 +6,9 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="BrowserWindowController">
             <connections>
+                <outlet property="containerView" destination="26F-Et-fYV" id="kru-zx-UXt"/>
+                <outlet property="goButton" destination="gie-v4-7nt" id="gmj-J0-gAi"/>
+                <outlet property="urlText" destination="MrE-9J-LKu" id="nNX-Ex-tt5"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -45,6 +48,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="fetch:" target="-2" id="SKu-8m-EGP"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
