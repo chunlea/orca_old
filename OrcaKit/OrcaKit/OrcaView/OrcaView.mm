@@ -17,7 +17,6 @@
     CGContextRef context = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
     CGContextSetRGBFillColor(context, rand() % 255 /1000.0,rand() % 255 /1000.0,rand() % 255 /1000.0,1.0);
     CGContextFillRect(context, NSRectToCGRect(dirtyRect));
-    
 }
 
 - (instancetype)initWithFrame:(NSRect)rect
