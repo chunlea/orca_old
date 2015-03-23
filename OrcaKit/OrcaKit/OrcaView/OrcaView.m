@@ -25,6 +25,7 @@
     self = [super initWithFrame:rect];
     
     if (self) {
+        [self loadRequest: @"orca://start.html"];
         // TODO:: 临时代码，需要在将来换掉这个地方。
         NSScrollView *scrollView = [[NSScrollView alloc] initWithFrame: CGRectMake(self.bounds.size.width/4, self.bounds.size.height/4, self.bounds.size.width/2, self.bounds.size.height/2)];
         // set the scroll view as the content view of your window

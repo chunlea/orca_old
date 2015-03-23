@@ -38,6 +38,9 @@
     
     [containerView addSubview:_orcaView];
     
+    [urlText setTarget:self];
+    [urlText setAction:@selector(fetch:)];
+    
     NSLog(@"Loaded!");
 }
 
@@ -53,7 +56,9 @@
 
 - (IBAction)fetch:(id)sender
 {
-    [_orcaView loadRequest:urlText.stringValue];
+    if ([urlText.stringValue length]>0) {
+        [_orcaView loadRequest:urlText.stringValue];
+    }
 }
 
 - (void)applicationTerminating
