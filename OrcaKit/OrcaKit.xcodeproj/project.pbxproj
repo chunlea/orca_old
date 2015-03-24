@@ -10,9 +10,9 @@
 		8CAFBBA31ABF719000C88B53 /* OrcaKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAFBBA21ABF719000C88B53 /* OrcaKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CAFBBA91ABF719000C88B53 /* OrcaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAFBB9D1ABF719000C88B53 /* OrcaKit.framework */; };
 		8CAFBBB01ABF719000C88B53 /* OrcaKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBBAF1ABF719000C88B53 /* OrcaKitTests.m */; };
-		8CAFBBC01ABF737200C88B53 /* OrcaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAFBBBE1ABF737200C88B53 /* OrcaView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CAFBBC11ABF737200C88B53 /* OrcaView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBBBF1ABF737200C88B53 /* OrcaView.mm */; };
 		8CAFBC511AC0724300C88B53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAFBC4E1AC070EA00C88B53 /* Cocoa.framework */; };
+		8CC6E5D51AC1538B0004F03D /* OrcaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CC6E5D31AC1538B0004F03D /* OrcaView.h */; };
+		8CC6E5D61AC1538B0004F03D /* OrcaView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CC6E5D41AC1538B0004F03D /* OrcaView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +32,9 @@
 		8CAFBBA81ABF719000C88B53 /* OrcaKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrcaKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAFBBAE1ABF719000C88B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAFBBAF1ABF719000C88B53 /* OrcaKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrcaKitTests.m; sourceTree = "<group>"; };
-		8CAFBBBE1ABF737200C88B53 /* OrcaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrcaView.h; path = OrcaView/OrcaView.h; sourceTree = "<group>"; };
-		8CAFBBBF1ABF737200C88B53 /* OrcaView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OrcaView.mm; path = OrcaView/OrcaView.mm; sourceTree = "<group>"; };
 		8CAFBC4E1AC070EA00C88B53 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8CC6E5D31AC1538B0004F03D /* OrcaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrcaView.h; sourceTree = "<group>"; };
+		8CC6E5D41AC1538B0004F03D /* OrcaView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OrcaView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,8 @@
 		8CAFBBC21ABF737900C88B53 /* OrcaView */ = {
 			isa = PBXGroup;
 			children = (
-				8CAFBBBE1ABF737200C88B53 /* OrcaView.h */,
-				8CAFBBBF1ABF737200C88B53 /* OrcaView.mm */,
+				8CC6E5D31AC1538B0004F03D /* OrcaView.h */,
+				8CC6E5D41AC1538B0004F03D /* OrcaView.mm */,
 			);
 			name = OrcaView;
 			sourceTree = "<group>";
@@ -135,8 +135,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC6E5D51AC1538B0004F03D /* OrcaView.h in Headers */,
 				8CAFBBA31ABF719000C88B53 /* OrcaKit.h in Headers */,
-				8CAFBBC01ABF737200C88B53 /* OrcaView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CAFBBC11ABF737200C88B53 /* OrcaView.mm in Sources */,
+				8CC6E5D61AC1538B0004F03D /* OrcaView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
