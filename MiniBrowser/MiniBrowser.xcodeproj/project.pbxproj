@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CAFBB6D1ABF64C500C88B53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB6C1ABF64C500C88B53 /* AppDelegate.m */; };
+		8CAFBB6D1ABF64C500C88B53 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB6C1ABF64C500C88B53 /* AppDelegate.mm */; };
 		8CAFBB6F1ABF64C500C88B53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB6E1ABF64C500C88B53 /* main.m */; };
 		8CAFBB711ABF64C500C88B53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB701ABF64C500C88B53 /* Images.xcassets */; };
 		8CAFBB741ABF64C500C88B53 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB721ABF64C500C88B53 /* MainMenu.xib */; };
 		8CAFBB801ABF64C500C88B53 /* MiniBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB7F1ABF64C500C88B53 /* MiniBrowserTests.m */; };
-		8CAFBB911ABF672700C88B53 /* BrowserWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */; };
+		8CAFBB911ABF672700C88B53 /* BrowserWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.mm */; };
 		8CAFBB921ABF672700C88B53 /* BrowserWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */; };
 		8CAFBBC91ABF7A6000C88B53 /* OrcaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAFBBC81ABF7A6000C88B53 /* OrcaKit.framework */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		8CAFBB661ABF64C500C88B53 /* MiniBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CAFBB6A1ABF64C500C88B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAFBB6B1ABF64C500C88B53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8CAFBB6C1ABF64C500C88B53 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CAFBB6C1ABF64C500C88B53 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		8CAFBB6E1ABF64C500C88B53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CAFBB701ABF64C500C88B53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8CAFBB731ABF64C500C88B53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -39,7 +39,7 @@
 		8CAFBB7E1ABF64C500C88B53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CAFBB7F1ABF64C500C88B53 /* MiniBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiniBrowserTests.m; sourceTree = "<group>"; };
 		8CAFBB8E1ABF672700C88B53 /* BrowserWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserWindowController.h; sourceTree = "<group>"; };
-		8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserWindowController.m; sourceTree = "<group>"; };
+		8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BrowserWindowController.mm; sourceTree = "<group>"; };
 		8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserWindowController.xib; sourceTree = "<group>"; };
 		8CAFBBC81ABF7A6000C88B53 /* OrcaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OrcaKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/Orca-arjunutbtnigohcnxqtbugwhhxqw/Build/Products/Debug/OrcaKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +87,9 @@
 			children = (
 				8CAFBB6B1ABF64C500C88B53 /* AppDelegate.h */,
 				8CAFBB8E1ABF672700C88B53 /* BrowserWindowController.h */,
-				8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.m */,
+				8CAFBB8F1ABF672700C88B53 /* BrowserWindowController.mm */,
 				8CAFBB901ABF672700C88B53 /* BrowserWindowController.xib */,
-				8CAFBB6C1ABF64C500C88B53 /* AppDelegate.m */,
+				8CAFBB6C1ABF64C500C88B53 /* AppDelegate.mm */,
 				8CAFBB701ABF64C500C88B53 /* Images.xcassets */,
 				8CAFBB721ABF64C500C88B53 /* MainMenu.xib */,
 				8CAFBB691ABF64C500C88B53 /* Supporting Files */,
@@ -224,8 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CAFBB6F1ABF64C500C88B53 /* main.m in Sources */,
-				8CAFBB911ABF672700C88B53 /* BrowserWindowController.m in Sources */,
-				8CAFBB6D1ABF64C500C88B53 /* AppDelegate.m in Sources */,
+				8CAFBB911ABF672700C88B53 /* BrowserWindowController.mm in Sources */,
+				8CAFBB6D1ABF64C500C88B53 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
